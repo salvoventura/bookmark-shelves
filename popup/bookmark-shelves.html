@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="bookmark-shelves.css"/>
+  </head>
+
+  <body>
+      <div class="container">
+          <h3>Bookmark Shelves
+              <img id="btnSwap" class="btn btn-default float-right" alt="-" src="../icons/icon-27453_32px.png" />
+          </h3>
+          <div>  <!-- This was a <form>, but even without a submit button it would trigger some undebuggable error. -->
+              <div id="shelf-select" class="form-group">
+                <label for="shelves-list">Available shelves</label>
+                <select id="shelves-list" class="form-control"></select>
+                <small id="shelves-list-help" class="form-text text-muted">Select from the list to activate a different shelf.</small>
+              </div>
+
+              <div id="shelf-new" class="form-group">
+                <label for="shelf-name">Create a new shelf</label>
+                <input id="shelf-name" type="text" class="form-control"/>
+                <small id="shelf-name-help" class="form-text text-muted">Type in a new shelf name.</small>
+              </div>
+
+              <div class="form-group">
+                <button id="btnSave" class="btn btn-primary">-</button>
+              </div>
+
+          </div>
+      </div>
+      <small class="form-text text-muted">
+      Version 1.0.0. Find us on <a href="https://github.com/salvoventura/bookmark-shelves" target="_blank">GitHub</a>.
+      </small>
+      <script src="browser-polyfill.min.js"></script>
+      <script src="bookmark-shelves.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmark Shelves",
+  "version": "1.0.0",
+  "description": "Unclutter your bookmarks according to the project you are working on",
+  "homepage_url": "https://github.com/salvoventura/bookmark-shelves",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "@salvoventura-bookmark-shelves",
+      "strict_min_version": "42.0"
+    }
+  },
+  "icons": {
+    "32": "icons/books-32px.png"
+  },
+
+  "permissions": [
+    "bookmarks"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/books-32px.png",
+    "default_title": "Bookmark Shelves",
+    "default_popup": "popup/bookmark-shelves.html"
+  }
+}

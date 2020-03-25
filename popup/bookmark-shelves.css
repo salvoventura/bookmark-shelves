@@ -1,0 +1,8 @@
+html, body {
+  padding: 5px;
+  min-width:250px; /* chrome was making it too narrow */
+}
+
+.hidden {
+  display:none;
+}
